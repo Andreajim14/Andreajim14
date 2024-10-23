@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Circular</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+        }
+
+        .circle {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #007bff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .main-circle {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #28a745;
+        }
+
+        .small-circle {
+            width: 100px;
+            height: 100px;
+        }
+
+        /* Posiciones de los círculos pequeños */
+        .circle-1 {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .circle-2 {
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        .circle-3 {
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+
+        .circle-4 {
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Estilos para los enlaces */
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Círculo principal -->
+    <div class="circle main-circle">
+        <a href="#">Inicio</a>
+    </div>
+
+    <!-- Círculos pequeños -->
+    <div class="circle small-circle circle-1">
+        <a href="#">Opción 1</a>
+    </div>
+
+    <div class="circle small-circle circle-2">
+        <a href="#">Opción 2</a>
+    </div>
+
+    <div class="circle small-circle circle-3">
+        <a href="#">Opción 3</a>
+    </div>
+
+    <div class="circle small-circle circle-4">
+        <a href="#">Opción 4</a>
+    </div>
+</div>
+
+</body>
+</html>
